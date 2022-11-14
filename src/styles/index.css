@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 25px 25px;
+    background-color: #ffffff;
+}
+
+nav .logo {
+    height: 30px;
+}
+
+nav h3 {
+    margin-right: 70%;
+    text-align: center;
+    color: #61DBFB;
+}
+
+nav.dark{
+    background-color: #282D35;
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+}
+
+.toggler p {
+    font-size: 0.625rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 25px;
+    height: 13px;
+    background-color: #2B283A;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: white;
+    background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: black;
+}
+
+.toggler--light {
+    color: #2B283A;
+}
+
+nav.dark .toggler--light {
+    color: #918E9B;
+}
+
+.toggler--dark {
+    color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+    color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+} 
+
+/* main styles */
+
+main {
+    background-color: #ffffff;
+    padding: 8em;
+    background-image: url(../images/grey.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    color: #2B283A;
+}
+
+main.dark {
+    background-image: url(../images/grey.png);
+    background-color: #282D35;
+    color: white;    
+}
+
+main > h1 {
+    margin-top: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+main > ul {
+    margin-top: 46px;
+}
+
+main > ul > li {
+    padding-block: 10px;
+    max-width: 400px;
+    opacity: 70%;
+}
+
+main > ul > li::marker{
+    font-size: 1.4rem;
+    color: #61DBFB;
+}
+
+
+
+
